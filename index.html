@@ -4,28 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CareerSeed AI – Trouvez le job idéal grâce à l'IA</title>
-  <meta name="description" content="CareerSeed est la plateforme intelligente qui optimise votre CV, trouve les meilleures offres d'emploi et prépare vos entretiens grâce à l'intelligence artificielle." />
+  <meta name="description" content="CareerSeed optimise votre CV, trouve les meilleures offres et prépare vos entretiens grâce à l'intelligence artificielle." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <!-- ══════════════════════════════
+       NAVBAR
+  ══════════════════════════════ -->
   <header class="navbar" id="navbar">
     <div class="container nav-inner">
       <a href="#" class="nav-logo">
-        <img src="img/app_Logo-removebg-preview (1).png" alt="CareerSeed Logo" class="logo-img" />
+        <img src="img/app_Logo-removebg-preview (1).png" alt="CareerSeed" class="logo-img" />
       </a>
       <nav class="nav-links" id="navLinks">
         <a href="#features">Fonctionnalités</a>
         <a href="#how-it-works">Comment ça marche</a>
-        <a href="#gallery">Galerie</a>
         <a href="#testimonials">Témoignages</a>
         <a href="#faq">FAQ</a>
       </nav>
-      <div class="nav-cta">
+      <div class="nav-actions">
         <button class="dark-toggle" id="darkToggle" aria-label="Basculer mode sombre">
           <span class="toggle-track">
             <span class="toggle-icon sun">☀️</span>
@@ -33,475 +34,355 @@
             <span class="toggle-thumb"></span>
           </span>
         </button>
-        <a href="#cta" class="btn btn-outline">Se connecter</a>
-        <a href="#cta" class="btn btn-primary">Démarrer</a>
+        <a href="#cta" class="btn btn-ghost">Se connecter</a>
+        <a href="#cta" class="btn btn-primary">Démarrer gratuitement</a>
       </div>
-      <button class="hamburger" id="hamburger" aria-label="Menu">
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- ═══════════════ HERO ═══════════════ -->
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
   <section class="hero" id="hero">
-    <div class="hero-bg">
-      <img src="img/Hero_backgound.png" alt="Background" class="hero-bg-img" />
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="hero-particles" id="heroParticles"></div>
-    <div class="container hero-content">
+    <div class="hero-bg-gradient"></div>
+    <div class="container hero-layout">
       <div class="hero-text fade-up">
-        <div class="badge-pill">
+        <div class="badge">
           <span class="badge-dot"></span>
-          Plateforme IA de carrière #1
+          Plateforme IA de carrière
         </div>
         <h1 class="hero-title">
-          Trouvez le job idéal<br />
-          <span class="gradient-text">grâce à l'Intelligence Artificielle</span>
+          Décrochez le job idéal<br />
+          <span class="gradient-text" id="typingTarget">grâce à l'IA</span>
         </h1>
         <p class="hero-subtitle">
-          CareerSeed analyse votre profil, optimise votre CV pour les ATS, identifie les offres parfaites
-          et vous prépare aux entretiens — tout en un seul endroit.
+          CareerSeed analyse votre profil, optimise votre CV pour les ATS, trouve les offres
+          parfaites et vous prépare aux entretiens — tout en un seul endroit.
         </p>
         <div class="hero-actions">
-          <a href="#cta" class="btn btn-primary btn-lg" id="hero-cta-start">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3l14 9-14 9V3z"/></svg>
-            Commencer maintenant
+          <a href="#cta" class="btn btn-primary btn-lg">
+            Commencer gratuitement
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <a href="#video" class="btn btn-glass btn-lg" id="hero-cta-demo">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-            Voir la démo
-          </a>
+          <a href="#how-it-works" class="btn btn-ghost btn-lg">Voir comment ça marche</a>
         </div>
         <div class="hero-stats">
-          <div class="stat-item">
+          <div class="stat">
             <span class="stat-number">10k+</span>
             <span class="stat-label">Utilisateurs actifs</span>
           </div>
           <div class="stat-divider"></div>
-          <div class="stat-item">
+          <div class="stat">
             <span class="stat-number">94%</span>
             <span class="stat-label">Taux de satisfaction</span>
           </div>
           <div class="stat-divider"></div>
-          <div class="stat-item">
+          <div class="stat">
             <span class="stat-number">3x</span>
             <span class="stat-label">Plus de réponses</span>
           </div>
         </div>
       </div>
+
       <div class="hero-visual fade-up delay-200">
-        <div class="mockup-wrapper">
-          <div class="mockup-glow"></div>
-          <div class="mockup-laptop">
-            <div class="laptop-screen">
-              <div class="screen-topbar">
-                <div class="screen-dots"><span></span><span></span><span></span></div>
-                <div class="screen-url">careerseed.ai/dashboard</div>
-              </div>
-              <img src="img/dashboard.png" 
-                   data-light-src="img/dashboard.png" 
-                   data-dark-src="img/dashoard_darkMode.png" 
-                   alt="CareerSeed Dashboard" class="hero-screen-img theme-image" />
-            </div>
+        <div class="mockup-frame">
+          <div class="mockup-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="mockup-url">careerseed.ai/dashboard</span>
           </div>
-          <!-- Floating badges -->
-          <div class="float-badge float-1">
-            <span class="fb-icon">🤖</span>
-            <div class="fb-text"><strong>IA active</strong><br/>Analyse en cours…</div>
-          </div>
-          <div class="float-badge float-2">
-            <span class="fb-icon">✅</span>
-            <div class="fb-text"><strong>CV optimisé!</strong><br/>+23 points ATS</div>
-          </div>
-          <div class="float-badge float-3">
-            <span class="fb-icon">🎯</span>
-            <div class="fb-text"><strong>Match trouvé</strong><br/>94% compatibilité</div>
-          </div>
+          <img
+            src="img/dashboard.png"
+            data-light-src="img/dashboard.png"
+            data-dark-src="img/dashoard_darkMode.png"
+            alt="Tableau de bord CareerSeed"
+            class="mockup-img theme-image"
+          />
         </div>
+        <div class="float-pill pill-1">🤖 IA active · Analyse en cours…</div>
+        <div class="float-pill pill-2">✅ CV optimisé · +23 pts ATS</div>
+        <div class="float-pill pill-3">🎯 Match · 94% compatibilité</div>
       </div>
-    </div>
-    <div class="hero-wave">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
-        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f9fafb"/>
-      </svg>
     </div>
   </section>
 
-  <!-- ═══════════════ PROBLEM ═══════════════ -->
-  <section class="problem-section section" id="problem">
+  <!-- ══════════════════════════════
+       PROBLEM
+  ══════════════════════════════ -->
+  <section class="section problem-section" id="problem">
     <div class="container">
       <div class="section-header fade-up">
         <div class="section-tag">Le problème</div>
         <h2 class="section-title">La recherche d'emploi est <span class="gradient-text">épuisante</span></h2>
-        <p class="section-subtitle">Des millions de candidats affrontent chaque jour les mêmes obstacles frustrants.</p>
+        <p class="section-subtitle">Des millions de candidats affrontent chaque jour les mêmes obstacles.</p>
       </div>
       <div class="problems-grid">
         <div class="problem-card fade-up" data-delay="0">
           <div class="problem-icon">📝</div>
-          <h3>CV inefficaces</h3>
-          <p>75% des CV sont éliminés automatiquement par les logiciels ATS avant même d'être lus par un humain.</p>
+          <h3>CV éliminés automatiquement</h3>
+          <p>75% des CV sont filtrés par les logiciels ATS avant même d'être lus par un recruteur humain.</p>
         </div>
         <div class="problem-card fade-up" data-delay="100">
           <div class="problem-icon">🔍</div>
-          <h3>Offres introuvables</h3>
-          <p>Des heures perdues à parcourir des centaines d'offres inadaptées à votre profil et vos objectifs.</p>
+          <h3>Des heures perdues</h3>
+          <p>Parcourir des centaines d'offres inadaptées à son profil est chronophage et décourageant.</p>
         </div>
         <div class="problem-card fade-up" data-delay="200">
           <div class="problem-icon">😰</div>
-          <h3>Entretiens stressants</h3>
-          <p>Manque de préparation, de feedback et de pratique face aux entretiens techniques et RH.</p>
+          <h3>Entretiens non préparés</h3>
+          <p>Manque de pratique et de feedback concret face aux entretiens techniques et RH.</p>
         </div>
         <div class="problem-card fade-up" data-delay="300">
           <div class="problem-icon">📉</div>
-          <h3>Aucun suivi</h3>
-          <p>Impossible de mesurer sa progression ou d'identifier les lacunes à combler pour progresser.</p>
-        </div>
-        <div class="problem-card fade-up" data-delay="400">
-          <div class="problem-icon">🌐</div>
-          <h3>Manque de visibilité</h3>
-          <p>Profils invisibles aux recruteurs faute d'optimisation et de positionnement stratégique.</p>
+          <h3>Aucun suivi de progression</h3>
+          <p>Impossible de mesurer sa progression ou d'identifier les lacunes à combler.</p>
         </div>
       </div>
-      <div class="problem-solution-transition fade-up">
-        <div class="arrow-down">↓</div>
-        <div class="solution-intro">
-          <span class="solution-tag">La solution</span>
-          <p><strong>CareerSeed</strong> résout tous ces problèmes grâce à l'intelligence artificielle.</p>
+      <div class="problem-transition fade-up">
+        <div class="transition-line"></div>
+        <div class="solution-callout">
+          <span class="solution-tag">La solution CareerSeed</span>
+          <p>L'intelligence artificielle résout chacun de ces problèmes.</p>
         </div>
+        <div class="transition-line"></div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ FEATURES ═══════════════ -->
-  <section class="features-section section" id="features">
-    <div class="features-bg-gradient"></div>
+  <!-- ══════════════════════════════
+       FEATURES — one section per feature
+  ══════════════════════════════ -->
+  <section class="section features-section" id="features">
     <div class="container">
       <div class="section-header fade-up">
         <div class="section-tag">Fonctionnalités</div>
-        <h2 class="section-title">Tout ce dont vous avez besoin<br /><span class="gradient-text">pour réussir</span></h2>
-        <p class="section-subtitle">Une suite complète d'outils IA conçus pour maximiser vos chances d'embauche.</p>
+        <h2 class="section-title">Tout ce qu'il vous faut<br /><span class="gradient-text">pour réussir</span></h2>
+        <p class="section-subtitle">Quatre outils IA complémentaires, un seul objectif : votre embauche.</p>
       </div>
-      <div class="features-grid">
 
-        <div class="feature-card featured fade-up" data-delay="0" id="feature-ats">
-          <div class="feature-icon-wrap" style="--icon-color: #4F46E5;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-          </div>
-          <div class="feature-body">
-            <h3>Analyse ATS du CV</h3>
-            <p>Notre IA scanne votre CV et le compare aux exigences ATS. Obtenez un score détaillé et des recommandations concrètes pour maximiser votre visibilité.</p>
-            <div class="feature-tags">
-              <span class="f-tag">Score ATS</span>
-              <span class="f-tag">Mots-clés</span>
-              <span class="f-tag">Format optimisé</span>
+      <!-- Feature 1 : ATS Analysis -->
+      <div class="feature-block fade-up" id="feature-ats">
+        <div class="feature-content">
+          <div class="feature-tag" style="--c:#4F46E5;">Analyse ATS</div>
+          <h3 class="feature-title">Optimisez votre CV pour passer les filtres ATS</h3>
+          <p class="feature-desc">Notre IA analyse votre CV selon les mêmes critères que les logiciels ATS utilisés par les entreprises. Vous obtenez un score détaillé et des recommandations prioritaires pour maximiser votre visibilité.</p>
+          <ul class="feature-list">
+            <li>Score ATS instantané avec explication</li>
+            <li>Analyse des mots-clés manquants</li>
+            <li>Vérification du format et de la structure</li>
+            <li>Suggestions de reformulation concrètes</li>
+          </ul>
+        </div>
+        <div class="feature-visual">
+          <div class="mini-card ats-card">
+            <div class="ats-ring-wrap">
+              <svg viewBox="0 0 80 80" class="ats-ring">
+                <circle cx="40" cy="40" r="32" fill="none" stroke="#E5E7EB" stroke-width="8"/>
+                <circle cx="40" cy="40" r="32" fill="none" stroke="url(#g1)" stroke-width="8"
+                  stroke-dasharray="201" stroke-dashoffset="30" stroke-linecap="round" transform="rotate(-90 40 40)"/>
+                <defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#4F46E5"/><stop offset="100%" stop-color="#7C3AED"/>
+                </linearGradient></defs>
+              </svg>
+              <span class="ats-score">85%</span>
+            </div>
+            <div class="ats-keywords">
+              <div class="kw match">✓ JavaScript</div>
+              <div class="kw match">✓ React</div>
+              <div class="kw miss">✗ TypeScript</div>
+              <div class="kw miss">✗ Node.js</div>
             </div>
           </div>
-          <div class="feature-preview">
-            <div class="fprev-score">
-              <div class="fprev-ring">
-                <svg viewBox="0 0 60 60">
-                  <circle cx="30" cy="30" r="24" fill="none" stroke="#e5e7eb" stroke-width="6"/>
-                  <circle cx="30" cy="30" r="24" fill="none" stroke="url(#fg1)" stroke-width="6"
-                    stroke-dasharray="150" stroke-dashoffset="22" stroke-linecap="round" transform="rotate(-90 30 30)"/>
-                  <defs><linearGradient id="fg1" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stop-color="#4F46E5"/><stop offset="100%" stop-color="#7C3AED"/>
-                  </linearGradient></defs>
-                </svg>
-                <span>85%</span>
-              </div>
-              <div class="fprev-kws">
-                <div class="kw-item match">✓ JavaScript</div>
-                <div class="kw-item match">✓ React</div>
-                <div class="kw-item miss">✗ TypeScript</div>
-                <div class="kw-item miss">✗ Node.js</div>
-              </div>
-            </div>
-          </div>
         </div>
+      </div>
 
-        <div class="feature-card fade-up" data-delay="100" id="feature-matching">
-          <div class="feature-icon-wrap" style="--icon-color: #06B6D4;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
-          </div>
-          <h3>Matching Intelligent</h3>
-          <p>Notre algorithme analyse 50+ critères pour vous présenter uniquement les offres avec le meilleur taux de compatibilité.</p>
-          <div class="feature-tags"><span class="f-tag">50+ critères</span><span class="f-tag">Temps réel</span></div>
+      <!-- Feature 2 : Job Matching -->
+      <div class="feature-block reverse fade-up" id="feature-matching">
+        <div class="feature-content">
+          <div class="feature-tag" style="--c:#06B6D4;">Matching intelligent</div>
+          <h3 class="feature-title">Trouvez les offres parfaites en quelques secondes</h3>
+          <p class="feature-desc">Notre algorithme analyse plus de 50 critères — compétences, secteur, localisation, culture d'entreprise — pour vous présenter uniquement les offres avec le meilleur taux de compatibilité.</p>
+          <ul class="feature-list">
+            <li>Matching basé sur 50+ critères personnalisés</li>
+            <li>Score de compatibilité par offre</li>
+            <li>Alertes en temps réel pour les nouvelles offres</li>
+            <li>Filtres avancés : contrat, niveau, secteur</li>
+          </ul>
         </div>
-
-        <div class="feature-card fade-up" data-delay="200" id="feature-reco">
-          <div class="feature-icon-wrap" style="--icon-color: #F59E0B;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-          </div>
-          <h3>Recommandations IA</h3>
-          <p>Recevez des conseils personnalisés pour améliorer votre profil, développer vos compétences et booster votre candidature.</p>
-          <div class="feature-tags"><span class="f-tag">Personnalisé</span><span class="f-tag">Actionnable</span></div>
+        <div class="feature-visual">
+          <img
+            src="img/jobMatching.png"
+            data-light-src="img/jobMatching.png"
+            data-dark-src="img/jobMatching_darkmode.png"
+            alt="Interface de matching d'emplois CareerSeed"
+            class="feature-screenshot theme-image"
+          />
         </div>
+      </div>
 
-        <div class="feature-card fade-up" data-delay="300" id="feature-interview">
-          <div class="feature-icon-wrap" style="--icon-color: #10B981;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-          </div>
-          <h3>Simulation d'entretien</h3>
-          <p>Pratiquez avec notre IA qui joue le rôle du recruteur : questions techniques, comportementales et feedback instantané.</p>
-          <div class="feature-tags"><span class="f-tag">IA conversationnelle</span><span class="f-tag">Feedback</span></div>
+      <!-- Feature 3 : Interview Simulator -->
+      <div class="feature-block fade-up" id="feature-interview">
+        <div class="feature-content">
+          <div class="feature-tag" style="--c:#10B981;">Simulation d'entretien</div>
+          <h3 class="feature-title">Entraînez-vous avec un recruteur IA</h3>
+          <p class="feature-desc">Pratiquez des entretiens techniques et RH avec notre IA conversationnelle. Recevez un feedback instantané sur vos réponses, votre formulation et votre structure d'argumentation.</p>
+          <ul class="feature-list">
+            <li>Questions techniques et comportementales</li>
+            <li>Feedback détaillé après chaque réponse</li>
+            <li>Sessions adaptées au poste visé</li>
+            <li>Historique et progression dans le temps</li>
+          </ul>
         </div>
-
-        <div class="feature-card fade-up" data-delay="400" id="feature-dashboard">
-          <div class="feature-icon-wrap" style="--icon-color: #EC4899;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
-          </div>
-          <h3>Dashboard & Suivi</h3>
-          <p>Visualisez votre progression en temps réel : candidatures, compétences, scores et objectifs de carrière.</p>
-          <div class="feature-tags"><span class="f-tag">Analytics</span><span class="f-tag">Objectifs</span></div>
+        <div class="feature-visual">
+          <img
+            src="img/Technical Assesment.png"
+            data-light-src="img/Technical Assesment.png"
+            data-dark-src="img/Technical AssesmentDarkmode .png"
+            alt="Simulation d'entretien CareerSeed"
+            class="feature-screenshot theme-image"
+          />
         </div>
+      </div>
 
+      <!-- Feature 4 : Dashboard -->
+      <div class="feature-block reverse fade-up" id="feature-dashboard">
+        <div class="feature-content">
+          <div class="feature-tag" style="--c:#EC4899;">Tableau de bord</div>
+          <h3 class="feature-title">Pilotez votre recherche d'emploi en temps réel</h3>
+          <p class="feature-desc">Visualisez l'ensemble de votre progression sur un tableau de bord intuitif : score ATS, candidatures envoyées, entretiens obtenus et objectifs de carrière.</p>
+          <ul class="feature-list">
+            <li>Vue globale de toutes vos candidatures</li>
+            <li>Suivi d'évolution de votre score ATS</li>
+            <li>Recommandations IA personnalisées</li>
+            <li>Objectifs et jalons de carrière</li>
+          </ul>
+        </div>
+        <div class="feature-visual">
+          <img
+            src="img/dashboard.png"
+            data-light-src="img/dashboard.png"
+            data-dark-src="img/dashoard_darkMode.png"
+            alt="Tableau de bord CareerSeed"
+            class="feature-screenshot theme-image"
+          />
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ GALLERY ═══════════════ -->
-  <section class="gallery-section section" id="gallery">
+  <!-- ══════════════════════════════
+       HOW IT WORKS
+  ══════════════════════════════ -->
+  <section class="section how-section" id="how-it-works">
     <div class="container">
       <div class="section-header fade-up">
-        <div class="section-tag">Galerie</div>
-        <h2 class="section-title">Découvrez l'interface <span class="gradient-text">CareerSeed</span></h2>
-        <p class="section-subtitle">Une expérience utilisateur élégante et intuitive conçue pour vous.</p>
+        <div class="section-tag">Comment ça marche</div>
+        <h2 class="section-title">Opérationnel en <span class="gradient-text">moins de 5 minutes</span></h2>
+        <p class="section-subtitle">Un processus simple, guidé par l'IA, pour obtenir des résultats rapidement.</p>
       </div>
-      <div class="gallery-carousel fade-up">
-        <div class="carousel-track" id="carouselTrack">
-          <!-- Slide 1 : Dashboard -->
-          <div class="carousel-slide" data-label="Dashboard &amp; Analyse CV">
-            <div class="slide-img-wrap">
-              <img src="img/dashboard.png" 
-                   data-light-src="img/dashboard.png" 
-                   data-dark-src="img/dashoard_darkMode.png" 
-                   alt="Dashboard CareerSeed" class="slide-real-img theme-image" />
-            </div>
-          </div>
-          <!-- Slide 2 : Job Matching -->
-          <div class="carousel-slide" data-label="Matching d'emplois">
-            <div class="slide-img-wrap">
-              <img src="img/jobMatching.png" 
-                   data-light-src="img/jobMatching.png" 
-                   data-dark-src="img/jobMatching_darkmode.png" 
-                   alt="Job Matching CareerSeed" class="slide-real-img theme-image" />
-            </div>
-          </div>
-          <!-- Slide 3 : Interview Simulator -->
-          <div class="carousel-slide" data-label="Simulation d'entretien">
-            <div class="slide-img-wrap">
-              <img src="img/Technical Assesment.png" 
-                   data-light-src="img/Technical Assesment.png" 
-                   data-dark-src="img/Technical AssesmentDarkmode .png" 
-                   alt="Interview Simulator CareerSeed" class="slide-real-img theme-image" />
-            </div>
-          </div>
-          <!-- placeholder so the closing div below is correct -->
+      <div class="steps-grid">
+        <div class="step-card fade-up" data-delay="0">
+          <div class="step-number">01</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          <h3>Importez votre CV</h3>
+          <p>Téléversez votre CV en PDF ou Word. Notre IA l'analyse instantanément et génère votre score ATS.</p>
         </div>
-        <div class="carousel-controls">
-           <button class="carousel-btn prev" id="carouselPrev" aria-label="Précédent">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-          </button>
-          <div class="carousel-dots" id="carouselDots"></div>
-          <button class="carousel-btn next" id="carouselNext" aria-label="Suivant">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-          </button>
+        <div class="step-connector fade-up" data-delay="50"></div>
+        <div class="step-card fade-up" data-delay="100">
+          <div class="step-number">02</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <h3>Définissez vos objectifs</h3>
+          <p>Précisez vos critères : secteur, niveau d'expérience, localisation et type de contrat recherché.</p>
         </div>
-        <div class="carousel-label" id="carouselLabel">Dashboard &amp; Analyse CV</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════ VIDEO ═══════════════ -->
-  <section class="video-section section" id="video">
-    <div class="container">
-      <div class="section-header fade-up">
-        <div class="section-tag">Démonstration</div>
-        <h2 class="section-title">Voyez CareerSeed <span class="gradient-text">en action</span></h2>
-        <p class="section-subtitle">Une démonstration complète de toutes les fonctionnalités en moins de 3 minutes.</p>
-      </div>
-      <div class="video-card fade-up auto-play-card" id="videoCard">
-        <div class="video-thumbnail">
-          <video id="demoVideo" class="demo-video" autoplay loop muted playsinline poster="img/Hero_backgound.png">
-            <source src="demo.mp4" type="video/mp4" />
-          </video>
-          <button id="muteToggleBtn" class="mute-toggle-btn" aria-label="Activer/Désactiver le son">
-            <svg id="icon-muted" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-              <line x1="23" y1="9" x2="17" y2="15"></line>
-              <line x1="17" y1="9" x2="23" y2="15"></line>
-            </svg>
-            <svg id="icon-unmuted" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-            </svg>
-          </button>
+        <div class="step-connector fade-up" data-delay="150"></div>
+        <div class="step-card fade-up" data-delay="200">
+          <div class="step-number">03</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 6v6l4 2"/></svg>
+          <h3>L'IA travaille pour vous</h3>
+          <p>CareerSeed optimise votre CV, identifie les meilleures offres et prépare vos simulations d'entretien.</p>
+        </div>
+        <div class="step-connector fade-up" data-delay="250"></div>
+        <div class="step-card fade-up" data-delay="300">
+          <div class="step-number">04</div>
+          <svg class="step-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>Décrochez votre emploi</h3>
+          <p>Postulez en confiance, entraînez-vous aux entretiens et suivez votre progression jusqu'à l'offre.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ HOW IT WORKS ═══════════════ -->
-  <section class="how-section section" id="how-it-works">
-    <div class="how-bg-gradient"></div>
-    <div class="container">
-      <div class="section-header fade-up">
-        <div class="section-tag">Processus</div>
-        <h2 class="section-title">Comment ça <span class="gradient-text">marche ?</span></h2>
-        <p class="section-subtitle">4 étapes simples pour transformer votre recherche d'emploi.</p>
-      </div>
-      <div class="steps-wrapper fade-up">
-        <div class="steps-connector"></div>
-        <div class="steps-grid">
-          <div class="step-card" id="step-1">
-            <div class="step-number">01</div>
-            <div class="step-icon-wrap">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-            </div>
-            <h3>Importer votre CV</h3>
-            <p>Téléchargez votre CV en PDF ou Word. Notre IA l'analyse instantanément.</p>
-          </div>
-          <div class="step-card" id="step-2">
-            <div class="step-number">02</div>
-            <div class="step-icon-wrap">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            </div>
-            <h3>Définir vos objectifs</h3>
-            <p>Précisez vos critères : secteur, niveau, localisation, type de contrat.</p>
-          </div>
-          <div class="step-card" id="step-3">
-            <div class="step-number">03</div>
-            <div class="step-icon-wrap">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="4" fill="currentColor"/></svg>
-            </div>
-            <h3>L'IA travaille pour vous</h3>
-            <p>Notre IA optimise votre CV, identifie les meilleures offres et prépare votre stratégie.</p>
-          </div>
-          <div class="step-card" id="step-4">
-            <div class="step-number">04</div>
-            <div class="step-icon-wrap">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            </div>
-            <h3>Décrochez votre emploi</h3>
-            <p>Postulez en confiance, préparez-vous aux entretiens et suivez votre progression.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════ ADVANTAGES ═══════════════ -->
-  <section class="advantages-section section" id="advantages">
-    <div class="container">
-      <div class="section-header fade-up">
-        <div class="section-tag">Avantages</div>
-        <h2 class="section-title">Pourquoi choisir <span class="gradient-text">CareerSeed ?</span></h2>
-      </div>
-      <div class="advantages-grid">
-        <div class="advantage-card fade-up" data-delay="0">
-          <div class="adv-icon" style="--c:#4F46E5;">⚡</div>
-          <h3>Gain de temps</h3>
-          <p>Réduisez votre temps de recherche de 80% grâce à l'automatisation intelligente et aux recommandations ciblées.</p>
-          <div class="adv-metric">— 80% de temps</div>
-        </div>
-        <div class="advantage-card fade-up" data-delay="100">
-          <div class="adv-icon" style="--c:#06B6D4;">🎯</div>
-          <h3>Efficacité maximale</h3>
-          <p>Postulez uniquement aux offres qui correspondent vraiment à votre profil avec un taux de réponse 3x plus élevé.</p>
-          <div class="adv-metric">3x plus de réponses</div>
-        </div>
-        <div class="advantage-card fade-up" data-delay="200">
-          <div class="adv-icon" style="--c:#10B981;">✨</div>
-          <h3>100% personnalisé</h3>
-          <p>Chaque recommandation est adaptée à votre parcours, vos compétences et vos objectifs de carrière uniques.</p>
-          <div class="adv-metric">Adapté à vous</div>
-        </div>
-        <div class="advantage-card fade-up" data-delay="300">
-          <div class="adv-icon" style="--c:#F59E0B;">👁</div>
-          <h3>Meilleure visibilité</h3>
-          <p>Un CV optimisé ATS qui passe tous les filtres automatiques et attire l'attention des recruteurs qualifiés.</p>
-          <div class="adv-metric">+94% de visibilité ATS</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════ TESTIMONIALS ═══════════════ -->
-  <section class="testimonials-section section" id="testimonials">
-    <div class="testimonials-bg"></div>
+  <!-- ══════════════════════════════
+       TESTIMONIALS
+  ══════════════════════════════ -->
+  <section class="section testimonials-section" id="testimonials">
     <div class="container">
       <div class="section-header fade-up">
         <div class="section-tag">Témoignages</div>
-        <h2 class="section-title">Ils ont réussi avec <span class="gradient-text">CareerSeed</span></h2>
-        <p class="section-subtitle">Des milliers d'utilisateurs ont transformé leur carrière grâce à notre plateforme.</p>
+        <h2 class="section-title">Ils ont trouvé leur emploi<br /><span class="gradient-text">grâce à CareerSeed</span></h2>
+        <p class="section-subtitle">Des milliers d'utilisateurs ont transformé leur carrière avec notre plateforme.</p>
       </div>
       <div class="testimonials-grid">
-        <div class="testimonial-card fade-up" data-delay="0" id="testimonial-1">
-          <div class="testi-quote">❝</div>
-          <p class="testi-text">"CareerSeed a complètement changé ma façon de chercher un emploi. Mon score ATS est passé de 42% à 89% en quelques heures. J'ai reçu 3 entretiens la semaine suivante !"</p>
+        <div class="testimonial-card fade-up" data-delay="0">
+          <div class="stars">★★★★★</div>
+          <p>"Mon score ATS est passé de 42% à 89% en quelques heures. J'ai reçu 3 invitations à des entretiens la semaine suivante. CareerSeed a changé ma recherche d'emploi."</p>
           <div class="testi-author">
-            <div class="testi-avatar" style="background:linear-gradient(135deg,#4F46E5,#7C3AED);">
-              <span>KA</span>
-            </div>
-            <div class="testi-info">
+            <div class="avatar" style="--g: linear-gradient(135deg,#4F46E5,#7C3AED);">KA</div>
+            <div>
               <strong>Karim Amrani</strong>
               <span>Étudiant en informatique · ENSIAS</span>
             </div>
-            <div class="testi-stars">★★★★★</div>
           </div>
         </div>
-        <div class="testimonial-card feature-card--accent fade-up" data-delay="150" id="testimonial-2">
-          <div class="testi-quote">❝</div>
-          <p class="testi-text">"La simulation d'entretien est incroyable. J'ai pu m'entraîner des dizaines de fois avant mon entretien chez une grande entreprise. Résultat : j'ai eu le poste !"</p>
+        <div class="testimonial-card featured-card fade-up" data-delay="150">
+          <div class="stars">★★★★★</div>
+          <p>"La simulation d'entretien est incroyable. Je me suis entraîné des dizaines de fois avant mon entretien chez une grande entreprise. Résultat : j'ai décroché le poste !"</p>
           <div class="testi-author">
-            <div class="testi-avatar" style="background:linear-gradient(135deg,#06B6D4,#4F46E5);">
-              <span>SB</span>
-            </div>
-            <div class="testi-info">
+            <div class="avatar" style="--g: linear-gradient(135deg,#06B6D4,#4F46E5);">SB</div>
+            <div>
               <strong>Sara Benali</strong>
               <span>Jeune diplômée · Master Marketing Digital</span>
             </div>
-            <div class="testi-stars">★★★★★</div>
           </div>
         </div>
-        <div class="testimonial-card fade-up" data-delay="300" id="testimonial-3">
-          <div class="testi-quote">❝</div>
-          <p class="testi-text">"En tant que développeur junior, le matching d'offres m'a sauvé. Plus besoin de passer des heures sur LinkedIn. CareerSeed me présente exactement ce que je cherche."</p>
+        <div class="testimonial-card fade-up" data-delay="300">
+          <div class="stars">★★★★★</div>
+          <p>"Le matching d'offres m'a sauvé. Plus besoin de passer des heures sur LinkedIn. CareerSeed me présente exactement les offres qui correspondent à mon profil."</p>
           <div class="testi-author">
-            <div class="testi-avatar" style="background:linear-gradient(135deg,#10B981,#06B6D4);">
-              <span>YM</span>
-            </div>
-            <div class="testi-info">
+            <div class="avatar" style="--g: linear-gradient(135deg,#10B981,#06B6D4);">YM</div>
+            <div>
               <strong>Yassine Moukhliss</strong>
               <span>Développeur Junior · React & Node.js</span>
             </div>
-            <div class="testi-stars">★★★★★</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ FAQ ═══════════════ -->
-  <section class="faq-section section" id="faq">
-    <div class="container">
-      <div class="section-header fade-up">
+  <!-- ══════════════════════════════
+       FAQ
+  ══════════════════════════════ -->
+  <section class="section faq-section" id="faq">
+    <div class="container faq-layout">
+      <div class="faq-header fade-up">
         <div class="section-tag">FAQ</div>
-        <h2 class="section-title">Questions <span class="gradient-text">fréquentes</span></h2>
+        <h2 class="section-title">Questions fréquentes</h2>
         <p class="section-subtitle">Tout ce que vous devez savoir sur CareerSeed.</p>
       </div>
-      <div class="faq-list fade-up" id="faqList">
-        <div class="faq-item" id="faq-1">
+      <div class="faq-list fade-up">
+        <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>CareerSeed est-il gratuit ?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            <p>Oui ! CareerSeed propose un plan gratuit qui inclut l'analyse de base de votre CV, 5 matchs d'emploi par mois et un accès limité à la simulation d'entretien. Pour un accès illimité, découvrez nos plans premium.</p>
+            <p>Oui. CareerSeed propose un plan gratuit qui inclut l'analyse de base de votre CV, 5 matchs d'emploi par mois et un accès limité à la simulation d'entretien. Pour un accès illimité, découvrez nos plans premium.</p>
           </div>
         </div>
-        <div class="faq-item" id="faq-2">
+        <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>Comment fonctionne l'analyse ATS ?</span>
             <span class="faq-icon">+</span>
@@ -510,144 +391,119 @@
             <p>Notre IA analyse votre CV selon les mêmes critères que les logiciels ATS utilisés par les entreprises : mots-clés, format, structure, sections obligatoires et cohérence du parcours. Vous obtenez un score détaillé et des recommandations prioritaires.</p>
           </div>
         </div>
-        <div class="faq-item" id="faq-3">
+        <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>Mes données sont-elles sécurisées ?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            <p>Absolument. Vos données personnelles et votre CV sont chiffrés et ne sont jamais partagés avec des tiers sans votre consentement explicite. Nous respectons le RGPD et les normes les plus strictes en matière de protection des données.</p>
+            <p>Absolument. Vos données personnelles et votre CV sont chiffrés et ne sont jamais partagés avec des tiers sans votre consentement. Nous respectons le RGPD et les normes les plus strictes en matière de protection des données.</p>
           </div>
         </div>
-        <div class="faq-item" id="faq-4">
+        <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>Dans quels pays CareerSeed est-il disponible ?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            <p>CareerSeed est disponible dans tous les pays francophones (France, Maroc, Algérie, Tunisie, Belgique, Suisse, Canada…) et s'étend progressivement à d'autres marchés. Le matching d'emplois est adapté à votre localisation.</p>
+            <p>CareerSeed est disponible dans tous les pays francophones (France, Maroc, Algérie, Tunisie, Belgique, Suisse, Canada…) et s'étend progressivement à d'autres marchés.</p>
           </div>
         </div>
-        <div class="faq-item" id="faq-5">
+        <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
-            <span>Combien de temps faut-il pour voir des résultats ?</span>
+            <span>Combien de temps avant de voir des résultats ?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            <p>La plupart de nos utilisateurs voient une amélioration significative de leur score ATS dès la première session (en moins de 30 minutes). Les premiers entretiens arrivent généralement dans les 2 à 4 semaines suivant l'optimisation du profil.</p>
+            <p>La plupart des utilisateurs voient une amélioration de leur score ATS dès la première session (moins de 30 minutes). Les premiers entretiens arrivent généralement dans les 2 à 4 semaines suivant l'optimisation du profil.</p>
           </div>
         </div>
-        <div class="faq-item" id="faq-6">
+        <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
             <span>Y a-t-il une application mobile ?</span>
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            <p>CareerSeed est entièrement responsive et fonctionne parfaitement sur mobile. Une application native iOS et Android est actuellement en développement et sera disponible prochainement.</p>
+            <p>CareerSeed est entièrement responsive et fonctionne parfaitement sur mobile. Une application native iOS et Android est en cours de développement.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ CTA FINAL ═══════════════ -->
-  <section class="cta-section section" id="cta">
-    <div class="cta-bg">
-      <div class="cta-blob cta-blob-1"></div>
-      <div class="cta-blob cta-blob-2"></div>
-      <div class="cta-particles" id="ctaParticles"></div>
-    </div>
-    <div class="container cta-content">
-      <div class="fade-up">
-        <div class="cta-badge">🚀 Rejoignez +10 000 professionnels</div>
-        <h2 class="cta-title">Prêt à transformer<br /><span class="gradient-text-light">votre carrière ?</span></h2>
-        <p class="cta-subtitle">Commencez gratuitement aujourd'hui. Aucune carte de crédit requise.<br />Résultats visibles dès la première session.</p>
-        <div class="cta-actions">
-          <a href="#" class="btn btn-white btn-lg" id="cta-try">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3l14 9-14 9V3z"/></svg>
-            Essayer CareerSeed — Gratuit
-          </a>
-          <a href="#video" class="btn btn-outline-white btn-lg" id="cta-demo">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-            Demander une démo
-          </a>
-        </div>
-        <div class="cta-trust">
-          <span>✓ Gratuit pour commencer</span>
-          <span>✓ Sans engagement</span>
-          <span>✓ Résultats garantis</span>
-        </div>
+  <!-- ══════════════════════════════
+       CTA FINAL
+  ══════════════════════════════ -->
+  <section class="cta-section" id="cta">
+    <div class="cta-glow"></div>
+    <div class="container cta-inner fade-up">
+      <div class="cta-badge">🚀 Rejoignez +10 000 professionnels</div>
+      <h2 class="cta-title">Prêt à transformer<br /><span class="gradient-text-light">votre carrière ?</span></h2>
+      <p class="cta-subtitle">Commencez gratuitement. Aucune carte de crédit requise.<br />Résultats visibles dès la première session.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-white btn-lg">
+          Essayer CareerSeed — Gratuit
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="cta-trust">
+        <span>✓ Gratuit pour commencer</span>
+        <span>✓ Sans engagement</span>
+        <span>✓ Données sécurisées RGPD</span>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════════ FOOTER ═══════════════ -->
-  <footer class="footer" id="footer">
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="img/app_Logo-removebg-preview (1).png" alt="CareerSeed Logo" class="footer-logo" />
-        <p class="footer-desc">La plateforme intelligente qui propulse votre carrière grâce à l'intelligence artificielle.</p>
+        <img src="img/app_Logo-removebg-preview (1).png" alt="CareerSeed" class="footer-logo" />
+        <p>La plateforme IA qui propulse votre carrière.</p>
         <div class="footer-socials">
-          <a href="#" class="social-link" aria-label="LinkedIn" id="footer-linkedin">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <a href="#" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
-          <a href="#" class="social-link" aria-label="Twitter/X" id="footer-twitter">
+          <a href="#" aria-label="Twitter/X">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="Instagram" id="footer-instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-          </a>
-          <a href="#" class="social-link" aria-label="YouTube" id="footer-youtube">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
           </a>
         </div>
       </div>
-      <div class="footer-links-group">
+      <div class="footer-col">
         <h4>Produit</h4>
         <ul>
           <li><a href="#features">Fonctionnalités</a></li>
-          <li><a href="#gallery">Galerie</a></li>
           <li><a href="#how-it-works">Comment ça marche</a></li>
-          <li><a href="#cta">Tarifs</a></li>
+          <li><a href="#testimonials">Témoignages</a></li>
+          <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
-      <div class="footer-links-group">
+      <div class="footer-col">
         <h4>Ressources</h4>
         <ul>
           <li><a href="#">Blog carrière</a></li>
           <li><a href="#">Guide ATS</a></li>
           <li><a href="#">Templates CV</a></li>
-          <li><a href="#">Documentation API</a></li>
         </ul>
       </div>
-      <div class="footer-links-group">
-        <h4>Entreprise</h4>
-        <ul>
-          <li><a href="#">À propos</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Carrières</a></li>
-          <li><a href="#">Presse</a></li>
-        </ul>
-      </div>
-      <div class="footer-links-group">
+      <div class="footer-col">
         <h4>Légal</h4>
         <ul>
           <li><a href="#">Confidentialité</a></li>
           <li><a href="#">CGU</a></li>
-          <li><a href="#">Cookies</a></li>
           <li><a href="#">RGPD</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="container footer-bottom-inner">
-        <p>© 2025 CareerSeed AI. Tous droits réservés. Conçu avec ❤️ pour les talents de demain.</p>
-        <p class="footer-tagline">Votre succès commence ici. 🌱</p>
+      <div class="container">
+        <p>© 2025 CareerSeed AI — Conçu pour les talents de demain 🌱</p>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll to top -->
   <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">↑</button>
 
   <script src="script.js"></script>
