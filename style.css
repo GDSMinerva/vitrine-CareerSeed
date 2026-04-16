@@ -370,7 +370,74 @@ body.dark-mode .toggle-thumb { transform: translateX(-24px); }
   box-shadow: var(--shadow-lg);
 }
 
-/* ATS mini-card */
+/* ── Feature Video Player ── */
+.video-player {
+  position: relative; border-radius: var(--radius);
+  overflow: hidden; border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg); background: #000;
+  cursor: pointer;
+  /* Subtle lift on hover */
+  transition: box-shadow .35s var(--ease), transform .35s var(--ease);
+}
+.video-player:hover {
+  box-shadow: 0 20px 60px rgba(0,0,0,.22);
+  transform: translateY(-4px);
+}
+
+.feature-video {
+  width: 100%; display: block;
+  /* poster image shows at natural aspect ratio */
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  transition: opacity .3s var(--ease);
+}
+
+/* Overlay sits on top of the video at all times */
+.video-overlay {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 12px;
+  background: rgba(0,0,0,.28);
+  backdrop-filter: blur(2px);
+  transition: opacity .3s var(--ease), backdrop-filter .3s var(--ease);
+}
+
+/* When playing, fade the overlay away */
+.video-player.playing .video-overlay {
+  opacity: 0;
+  pointer-events: none;
+  backdrop-filter: blur(0px);
+}
+
+.play-btn {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: rgba(255,255,255,.95);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 24px rgba(0,0,0,.3);
+  transition: transform .25s var(--ease), background .25s var(--ease);
+}
+.play-btn svg {
+  width: 28px; height: 28px; color: var(--primary);
+  margin-left: 3px; /* optical center for triangle */
+}
+.video-player:hover .play-btn {
+  transform: scale(1.1);
+  background: #fff;
+}
+
+.video-hint {
+  font-size: .78rem; font-weight: 600; color: rgba(255,255,255,.85);
+  letter-spacing: .04em; text-transform: uppercase;
+  background: rgba(0,0,0,.3); padding: 5px 12px;
+  border-radius: var(--radius-full);
+}
+
+/* On mobile: tap to play (no hover) — show hint accordingly */
+@media (hover: none) {
+  .video-hint { display: none; }
+}
+
+/* ATS mini-card — kept for reference but replaced in HTML */
 .mini-card {
   background: var(--bg); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow-md);
@@ -383,10 +450,7 @@ body.dark-mode .toggle-thumb { transform: translateX(-24px); }
   font-family: 'Sora', sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--text);
 }
 .ats-keywords { display: flex; flex-direction: column; gap: 8px; width: 100%; }
-.kw {
-  padding: 8px 12px; border-radius: var(--radius-sm);
-  font-size: .85rem; font-weight: 600;
-}
+.kw { padding: 8px 12px; border-radius: var(--radius-sm); font-size: .85rem; font-weight: 600; }
 .kw.match { background: rgba(16,185,129,.1); color: #059669; }
 .kw.miss   { background: rgba(239,68,68,.08); color: #DC2626; }
 

@@ -152,7 +152,8 @@
   </section>
 
   <!-- ══════════════════════════════
-       FEATURES — one section per feature
+       FEATURES — one block per feature
+       Videos: hover = play, leave = pause+reset
   ══════════════════════════════ -->
   <section class="section features-section" id="features">
     <div class="container">
@@ -162,37 +163,31 @@
         <p class="section-subtitle">Quatre outils IA complémentaires, un seul objectif : votre embauche.</p>
       </div>
 
-      <!-- Feature 1 : ATS Analysis -->
+      <!-- Feature 1 : CV Analysis (Dashboard) -->
       <div class="feature-block fade-up" id="feature-ats">
         <div class="feature-content">
-          <div class="feature-tag" style="--c:#4F46E5;">Analyse ATS</div>
-          <h3 class="feature-title">Optimisez votre CV pour passer les filtres ATS</h3>
-          <p class="feature-desc">Notre IA analyse votre CV selon les mêmes critères que les logiciels ATS utilisés par les entreprises. Vous obtenez un score détaillé et des recommandations prioritaires pour maximiser votre visibilité.</p>
+          <div class="feature-tag" style="--c:#4F46E5;">Analyse CV & Score ATS</div>
+          <h3 class="feature-title">Votre CV scanné, scoré et optimisé par l'IA</h3>
+          <p class="feature-desc">
+            Importez votre CV et notre intelligence artificielle l'analyse immédiatement selon les mêmes critères que les logiciels ATS utilisés par les recruteurs. En quelques secondes, vous obtenez un score de compatibilité précis, une liste détaillée des mots-clés manquants, et des recommandations concrètes — reformulations, sections à ajouter, formats à corriger — pour maximiser vos chances de passer les filtres automatiques et d'atteindre un recruteur humain.
+          </p>
           <ul class="feature-list">
-            <li>Score ATS instantané avec explication</li>
-            <li>Analyse des mots-clés manquants</li>
-            <li>Vérification du format et de la structure</li>
-            <li>Suggestions de reformulation concrètes</li>
+            <li>Score ATS détaillé avec explication par critère</li>
+            <li>Détection des mots-clés manquants par rapport à l'offre</li>
+            <li>Vérification du format, de la structure et des sections</li>
+            <li>Suggestions de reformulation actionnables et prioritaires</li>
           </ul>
         </div>
         <div class="feature-visual">
-          <div class="mini-card ats-card">
-            <div class="ats-ring-wrap">
-              <svg viewBox="0 0 80 80" class="ats-ring">
-                <circle cx="40" cy="40" r="32" fill="none" stroke="#E5E7EB" stroke-width="8"/>
-                <circle cx="40" cy="40" r="32" fill="none" stroke="url(#g1)" stroke-width="8"
-                  stroke-dasharray="201" stroke-dashoffset="30" stroke-linecap="round" transform="rotate(-90 40 40)"/>
-                <defs><linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="#4F46E5"/><stop offset="100%" stop-color="#7C3AED"/>
-                </linearGradient></defs>
-              </svg>
-              <span class="ats-score">85%</span>
-            </div>
-            <div class="ats-keywords">
-              <div class="kw match">✓ JavaScript</div>
-              <div class="kw match">✓ React</div>
-              <div class="kw miss">✗ TypeScript</div>
-              <div class="kw miss">✗ Node.js</div>
+          <div class="video-player" data-src="videos/cv-analysis.mp4">
+            <video class="feature-video" muted playsinline preload="none" poster="img/dashboard.png">
+              <source src="videos/cv-analysis.mp4" type="video/mp4" />
+            </video>
+            <div class="video-overlay">
+              <div class="play-btn" aria-label="Voir la démo">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span class="video-hint">Survolez pour voir la démo</span>
             </div>
           </div>
         </div>
@@ -203,22 +198,28 @@
         <div class="feature-content">
           <div class="feature-tag" style="--c:#06B6D4;">Matching intelligent</div>
           <h3 class="feature-title">Trouvez les offres parfaites en quelques secondes</h3>
-          <p class="feature-desc">Notre algorithme analyse plus de 50 critères — compétences, secteur, localisation, culture d'entreprise — pour vous présenter uniquement les offres avec le meilleur taux de compatibilité.</p>
+          <p class="feature-desc">
+            Fini les heures perdues à parcourir des centaines d'offres inadaptées. Notre algorithme de matching analyse plus de 50 critères — compétences, secteur d'activité, localisation, niveau d'expérience, culture d'entreprise — et vous présente uniquement les offres avec le meilleur taux de compatibilité avec votre profil. Chaque offre est accompagnée d'un score de correspondance expliqué, pour que vous postuliez toujours au bon endroit, au bon moment.
+          </p>
           <ul class="feature-list">
             <li>Matching basé sur 50+ critères personnalisés</li>
-            <li>Score de compatibilité par offre</li>
-            <li>Alertes en temps réel pour les nouvelles offres</li>
-            <li>Filtres avancés : contrat, niveau, secteur</li>
+            <li>Score de compatibilité expliqué pour chaque offre</li>
+            <li>Alertes en temps réel pour les nouvelles opportunités</li>
+            <li>Filtres avancés : contrat, niveau, secteur, localisation</li>
           </ul>
         </div>
         <div class="feature-visual">
-          <img
-            src="img/jobMatching.png"
-            data-light-src="img/jobMatching.png"
-            data-dark-src="img/jobMatching_darkmode.png"
-            alt="Interface de matching d'emplois CareerSeed"
-            class="feature-screenshot theme-image"
-          />
+          <div class="video-player" data-src="videos/job-matching.mp4">
+            <video class="feature-video" muted playsinline preload="none" poster="img/jobMatching.png">
+              <source src="videos/job-matching.mp4" type="video/mp4" />
+            </video>
+            <div class="video-overlay">
+              <div class="play-btn" aria-label="Voir la démo">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span class="video-hint">Survolez pour voir la démo</span>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -226,49 +227,62 @@
       <div class="feature-block fade-up" id="feature-interview">
         <div class="feature-content">
           <div class="feature-tag" style="--c:#10B981;">Simulation d'entretien</div>
-          <h3 class="feature-title">Entraînez-vous avec un recruteur IA</h3>
-          <p class="feature-desc">Pratiquez des entretiens techniques et RH avec notre IA conversationnelle. Recevez un feedback instantané sur vos réponses, votre formulation et votre structure d'argumentation.</p>
+          <h3 class="feature-title">Entraînez-vous face à un recruteur IA, sans pression</h3>
+          <p class="feature-desc">
+            L'entretien est souvent la dernière barrière avant l'offre — et la moins préparée. CareerSeed simule de vrais entretiens techniques et RH avec une IA conversationnelle qui joue le rôle du recruteur. Après chaque réponse, vous recevez un feedback instantané sur votre contenu, votre structure d'argumentation et votre formulation. Entraînez-vous autant de fois que nécessaire, suivez votre progression et abordez chaque entretien avec une confiance réelle.
+          </p>
           <ul class="feature-list">
-            <li>Questions techniques et comportementales</li>
-            <li>Feedback détaillé après chaque réponse</li>
-            <li>Sessions adaptées au poste visé</li>
-            <li>Historique et progression dans le temps</li>
+            <li>Questions techniques et comportementales adaptées au poste</li>
+            <li>Feedback immédiat sur le fond, la forme et la structure</li>
+            <li>Sessions illimitées pour une pratique intensive</li>
+            <li>Historique de progression et points d'amélioration</li>
           </ul>
         </div>
         <div class="feature-visual">
-          <img
-            src="img/Technical Assesment.png"
-            data-light-src="img/Technical Assesment.png"
-            data-dark-src="img/Technical AssesmentDarkmode .png"
-            alt="Simulation d'entretien CareerSeed"
-            class="feature-screenshot theme-image"
-          />
+          <div class="video-player" data-src="videos/interview-sim.mp4">
+            <video class="feature-video" muted playsinline preload="none" poster="img/Technical Assesment.png">
+              <source src="videos/interview-sim.mp4" type="video/mp4" />
+            </video>
+            <div class="video-overlay">
+              <div class="play-btn" aria-label="Voir la démo">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span class="video-hint">Survolez pour voir la démo</span>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Feature 4 : Dashboard -->
-      <div class="feature-block reverse fade-up" id="feature-dashboard">
+      <!-- Feature 4 : Courses & Project Recommendations -->
+      <div class="feature-block reverse fade-up" id="feature-courses">
         <div class="feature-content">
-          <div class="feature-tag" style="--c:#EC4899;">Tableau de bord</div>
-          <h3 class="feature-title">Pilotez votre recherche d'emploi en temps réel</h3>
-          <p class="feature-desc">Visualisez l'ensemble de votre progression sur un tableau de bord intuitif : score ATS, candidatures envoyées, entretiens obtenus et objectifs de carrière.</p>
+          <div class="feature-tag" style="--c:#F59E0B;">Formations & Projets</div>
+          <h3 class="feature-title">Comblez vos lacunes avec des formations et projets ciblés</h3>
+          <p class="feature-desc">
+            Un bon CV ne suffit pas si vos compétences ne correspondent pas aux exigences du marché. CareerSeed identifie précisément les lacunes entre votre profil actuel et les postes que vous visez, puis vous recommande des formations en ligne, des certifications reconnues et des projets pratiques à réaliser pour combler ces écarts rapidement. Chaque recommandation est personnalisée selon votre secteur, votre niveau et vos objectifs de carrière.
+          </p>
           <ul class="feature-list">
-            <li>Vue globale de toutes vos candidatures</li>
-            <li>Suivi d'évolution de votre score ATS</li>
-            <li>Recommandations IA personnalisées</li>
-            <li>Objectifs et jalons de carrière</li>
+            <li>Analyse des compétences manquantes par rapport aux offres cibles</li>
+            <li>Recommandations de formations Coursera, Udemy, LinkedIn Learning…</li>
+            <li>Projets pratiques suggérés pour enrichir votre portfolio</li>
+            <li>Certifications prioritaires pour booster votre crédibilité</li>
           </ul>
         </div>
         <div class="feature-visual">
-          <img
-            src="img/dashboard.png"
-            data-light-src="img/dashboard.png"
-            data-dark-src="img/dashoard_darkMode.png"
-            alt="Tableau de bord CareerSeed"
-            class="feature-screenshot theme-image"
-          />
+          <div class="video-player" data-src="videos/courses.mp4">
+            <video class="feature-video" muted playsinline preload="none" poster="img/dashboard.png">
+              <source src="videos/courses.mp4" type="video/mp4" />
+            </video>
+            <div class="video-overlay">
+              <div class="play-btn" aria-label="Voir la démo">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span class="video-hint">Survolez pour voir la démo</span>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 

@@ -195,6 +195,44 @@
       a.style.color  = isActive ? 'var(--primary)' : '';
     });
   }
-  window.addEventListener('scroll', updateActiveNav, { passive: true });
+
+  /* ─────────────────────────────
+     FEATURE VIDEOS — hover to play / leave to pause
+     On touch devices: tap overlay to play, tap video to pause
+  ───────────────────────────── */
+  document.querySelectorAll('.video-player').forEach(player => {
+    const video   = player.querySelector('.feature-video');
+    const overlay = player.querySelector('.video-overlay');
+
+    function startPlay() {
+      video.play().then(() => {
+        player.classList.add('playing');
+      }).catch(() => {
+        // Browser blocked autoplay — silently ignore
+      });
+    }
+
+    function stopPlay() {
+      video.pause();
+      video.currentTime = 0;
+      player.classList.remove('playing');
+    }
+
+    // Desktop: hover
+    player.addEventListener('mouseenter', startPlay);
+    player.addEventListener('mouseleave', stopPlay);
+
+    // Mobile / touch: tap overlay to play, tap video to pause
+    overlay.addEventListener('click', (e) => {
+      e.stopPropagation();
+      startPlay();
+    });
+    video.addEventListener('click', stopPlay);
+
+    // When video ends, reset to poster
+    video.addEventListener('ended', () => {
+      player.classList.remove('playing');
+    });
+  });
 
 })();
