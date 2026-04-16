@@ -234,5 +234,32 @@
       player.classList.remove('playing');
     });
   });
+  /* Add this inside your IIFE in script.js */
+
+// 1. Mouse-move Parallax for Hero Pills
+document.addEventListener('mousemove', (e) => {
+  const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+  const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+  
+  document.querySelectorAll('.float-pill').forEach((pill, index) => {
+    const factor = (index + 1) * 1.5;
+    pill.style.transform = `translate(${moveX * factor}px, ${moveY * factor}px)`;
+  });
+});
+
+// 2. Button Magnetic Effect
+const btns = document.querySelectorAll('.btn-primary');
+btns.forEach(btn => {
+  btn.addEventListener('mousemove', (e) => {
+    const rect = btn.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    btn.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
+  });
+  
+  btn.addEventListener('mouseleave', () => {
+    btn.style.transform = `translate(0, 0)`;
+  });
+});
 
 })();
